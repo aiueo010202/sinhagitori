@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>1G連チャレンジ</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      background-color: #111;
+      color: #fff;
+      padding-top: 50px;
+    }
+    button {
+      font-size: 1.5em;
+      padding: 10px 20px;
+      background-color: gold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 10px;
+    }
+    .result, .streak {
+      margin-top: 30px;
+      font-size: 2em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- モード選択画面 -->
+  <div id="mode-selector">
+    <h1>モード選択</h1>
+    <p>遊びたいモードを選んでください</p>
+    <button onclick="selectMode('normal')">剥ぎ取りチャンス（50%）</button>
+    <button onclick="selectMode('gold')">超剥ぎ取りチャンスG（70%）</button>
+  </div>
+
+  <!-- ゲーム画面 -->
+  <div id="game-area" style="display:none;">
+    <h1 id="mode-title">1G連チャレンジ</h1>
+    <p id="mode-description"></p>
+
+    <button onclick="tryChance()">チャレンジする</button>
+
+    <div class="result" id="result"></div>
+    <div class="streak" id="streak">現在の連チャン数: 0</div>
+
+    <button onclick="goBackToModeSelection()">モード選択に戻る</button>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
