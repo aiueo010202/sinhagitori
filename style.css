@@ -1,16 +1,21 @@
+/* ベースは変えずに、スマホ対応用のメディアクエリを追加 */
+
 body {
   font-family: 'Arial', sans-serif;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   padding-top: 60px;
   margin: 0;
   min-height: 100vh;
   backdrop-filter: brightness(0.9) contrast(1.2);
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
+/* ヘッダーやテキストのフォントサイズは大きめに */
 h1 {
   font-size: 2.5em;
   margin-bottom: 0.3em;
@@ -21,21 +26,26 @@ h1 {
 p {
   font-size: 1.2em;
   margin-bottom: 20px;
-  color: #eee;
+  color: #ffffff;
   text-shadow: 1px 1px 2px #000;
 }
 
 button {
   font-size: 1.5em;
-  padding: 12px 24px;
+  padding: 14px 28px;
   background: linear-gradient(to bottom, #ffcc00, #ffaa00);
   border: none;
   border-radius: 12px;
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(255, 204, 0, 0.5);
   transition: transform 0.2s;
+  /* タッチしやすくするために余白を増やす */
+  margin: 10px 0;
+  width: 100%;
+  max-width: 320px;
 }
 
+/* ホバーはスマホでは無効なので強調しすぎない */
 button:hover {
   transform: scale(1.05);
 }
@@ -54,4 +64,20 @@ button:hover {
   color: #bbff00;
 }
 
-
+/* メディアクエリで小さい画面向け調整 */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1em;
+  }
+  .result, .streak {
+    font-size: 1.4em;
+  }
+  button {
+    font-size: 1.3em;
+    padding: 12px 20px;
+    max-width: 100%;
+  }
+}
