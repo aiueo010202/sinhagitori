@@ -1,0 +1,58 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('OIP.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  padding-top: 60px;
+  margin: 0;
+  min-height: 100vh;
+  backdrop-filter: brightness(0.9) contrast(1.2);
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.3em;
+  color: #f00b0b;
+  text-shadow: 2px 2px 5px #000;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #eee;
+  text-shadow: 1px 1px 2px #000;
+}
+
+button {
+  font-size: 1.5em;
+  padding: 12px 24px;
+  background: linear-gradient(to bottom, #ffcc00, #ffaa00);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(255, 204, 0, 0.5);
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.result, .streak {
+  margin-top: 30px;
+  font-size: 1.8em;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.result {
+  font-weight: bold;
+}
+
+.streak {
+  color: #bbff00;
+}
+
+
