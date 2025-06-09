@@ -1,0 +1,18 @@
+{
+  "modes": {
+    "normal": {
+      "title": "剥ぎ取りチャンス",
+      "description": "50%の確率で1G連をストック！",
+      "stockProbability": 0.5,
+      "successMessage": "ストック成功！",
+      "failMessage": "失敗..."
+    },
+    "gold": {
+      "title": "超剥ぎ取りチャンスG",
+      "description": "70%の確率で1G連をストック！",
+      "stockProbability": 0.7,
+      "successMessage": "ストック成功！",
+      "failMessage": "失敗..."
+    }
+  }
+}
